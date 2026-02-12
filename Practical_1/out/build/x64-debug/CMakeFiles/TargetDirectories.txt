@@ -1,0 +1,8 @@
+D:/Networking/Practical_1/out/build/x64-debug/CMakeFiles/edit_cache.dir
+D:/Networking/Practical_1/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+D:/Networking/Practical_1/out/build/x64-debug/Practical_1/CMakeFiles/tcptestserver.dir
+D:/Networking/Practical_1/out/build/x64-debug/Practical_1/CMakeFiles/tcptestclient.dir
+D:/Networking/Practical_1/out/build/x64-debug/Practical_1/CMakeFiles/udptestserver.dir
+D:/Networking/Practical_1/out/build/x64-debug/Practical_1/CMakeFiles/udptestclient.dir
+D:/Networking/Practical_1/out/build/x64-debug/Practical_1/CMakeFiles/edit_cache.dir
+D:/Networking/Practical_1/out/build/x64-debug/Practical_1/CMakeFiles/rebuild_cache.dir

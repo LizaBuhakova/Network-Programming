@@ -1,0 +1,27 @@
+# ninja log v6
+89	800	7926287631480556	Practical_1/CMakeFiles/udp_client.dir/CPP/main_udp_client.cpp.obj	1b8dc664ec2768ff
+7	1245	7926303138920649	Practical_1/CMakeFiles/tcptestserver.dir/src/SocketAddress.cpp.obj	398b17ebcd7523ca
+71	941	7926287631310228	Practical_1/CMakeFiles/udp_server.dir/CPP/main_udp_server.cpp.obj	31eb86251bebcba6
+28	1220	7926296773081553	Practical_1/CMakeFiles/tcptestserver.dir/src/tcpserver.cpp.obj	bd9f516eeb92b95f
+34	943	7926297992644194	Practical_1/CMakeFiles/tcptestclient.dir/src/tcpclient.cpp.obj	16fcb4d6a9cf8c8c
+30	888	7926287630891232	Practical_1/CMakeFiles/tcp_server.dir/CPP/main_tcp_server.cpp.obj	a155bd62dea7b182
+53	913	7926287631119615	Practical_1/CMakeFiles/tcp_client.dir/CPP/main_tcp_client.cpp.obj	f185161200be1f28
+53	1253	7926296773325452	Practical_1/CMakeFiles/tcptestclient.dir/src/tcptestclient.cpp.obj	e093ab26fc9ad561
+34	1227	7926296773128187	Practical_1/CMakeFiles/tcptestserver.dir/src/tcptestserver.cpp.obj	d0fa0962011af5a1
+29	922	7926297992595235	Practical_1/CMakeFiles/tcptestclient.dir/src/socketaddress.cpp.obj	82ad0caeb8b03203
+24	928	7926297992552107	Practical_1/CMakeFiles/tcptestserver.dir/src/socketaddress.cpp.obj	3729b3b19afa982a
+23	1274	7926303139077375	Practical_1/CMakeFiles/tcptestclient.dir/src/SocketAddress.cpp.obj	8d1fd32326e42b6
+1253	1428	7926303151378394	Practical_1/tcptestserver.exe	2dd2b6e12fbb9be
+17	1232	7926303139013928	Practical_1/CMakeFiles/tcptestserver.dir/src/TcpTestServer.cpp.obj	2f45f30b81010b7c
+13	1252	7926303138975022	Practical_1/CMakeFiles/tcptestserver.dir/src/TcpServer.cpp.obj	9c31617f89f0fc21
+36	1268	7926303139205124	Practical_1/CMakeFiles/tcptestclient.dir/src/TcpTestClient.cpp.obj	c5fc38599d2513cb
+29	1294	7926303139126965	Practical_1/CMakeFiles/tcptestclient.dir/src/TcpClient.cpp.obj	76e8222519be6265
+1300	1595	7926303151841921	Practical_1/tcptestclient.exe	23fca35a8b17a033
+30	1290	7926307440203542	Practical_1/CMakeFiles/udptestserver.dir/src/UdpTestServer.cpp.obj	89f4715591cde6d4
+25	1315	7926307440138677	Practical_1/CMakeFiles/udptestserver.dir/src/UdpServer.cpp.obj	1b59cee9cb03b349
+36	1324	7926307440259161	Practical_1/CMakeFiles/udptestclient.dir/src/SocketAddress.cpp.obj	778fddf95303531a
+19	1331	7926307440085376	Practical_1/CMakeFiles/udptestserver.dir/src/SocketAddress.cpp.obj	b46bf3223af82a64
+42	1347	7926307440314176	Practical_1/CMakeFiles/udptestclient.dir/src/UdpClient.cpp.obj	e7fc5799fd6948de
+48	1352	7926307440370713	Practical_1/CMakeFiles/udptestclient.dir/src/UdpTestClient.cpp.obj	9f96b7674c351731
+1352	1755	7926307453417763	Practical_1/udptestclient.exe	84ce40e7054e73a3
+1331	1756	7926307453208919	Practical_1/udptestserver.exe	972a8451908069c4
