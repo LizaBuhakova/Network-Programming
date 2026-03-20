@@ -1,0 +1,6 @@
+D:/Network/Practical_3/out/build/x64-debug/CMakeFiles/edit_cache.dir
+D:/Network/Practical_3/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+D:/Network/Practical_3/out/build/x64-debug/Practical_3/CMakeFiles/echo_server.dir
+D:/Network/Practical_3/out/build/x64-debug/Practical_3/CMakeFiles/echo_client.dir
+D:/Network/Practical_3/out/build/x64-debug/Practical_3/CMakeFiles/edit_cache.dir
+D:/Network/Practical_3/out/build/x64-debug/Practical_3/CMakeFiles/rebuild_cache.dir

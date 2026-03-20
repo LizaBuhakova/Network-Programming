@@ -1,0 +1,103 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Practical_1",
+					"jsonFile" : "directory-Practical_1-Debug-0cfdac6a7b985c7bc486.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Practical_1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "Practical_1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "tcptestclient::@2c14552a23f60e023847",
+					"jsonFile" : "target-tcptestclient-Debug-281bfb3b28cbf9f51eb1.json",
+					"name" : "tcptestclient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "tcptestserver::@2c14552a23f60e023847",
+					"jsonFile" : "target-tcptestserver-Debug-78185147f4bce0ca6cee.json",
+					"name" : "tcptestserver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "udptestclient::@2c14552a23f60e023847",
+					"jsonFile" : "target-udptestclient-Debug-094c125461caec1d46a6.json",
+					"name" : "udptestclient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "udptestserver::@2c14552a23f60e023847",
+					"jsonFile" : "target-udptestserver-Debug-f9125fa707ef9f7faa4e.json",
+					"name" : "udptestserver",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Networking/Practical_1/out/build/x64-debug",
+		"source" : "D:/Networking/Practical_1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

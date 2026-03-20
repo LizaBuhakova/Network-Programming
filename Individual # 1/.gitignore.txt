@@ -1,0 +1,13 @@
+# Временные файлы Visual Studio / CMake / компиляции
+*.obj
+*.exe
+*.pdb
+*.ipch
+*.log
+*.o
+*.out
+*.ninja_log
+build/
+Debug/
+Release/
+x64/

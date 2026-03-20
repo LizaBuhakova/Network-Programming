@@ -1,0 +1,9 @@
+# ninja log v6
+3	784	7949357795763099	Practical_3/CMakeFiles/TCPServer.dir/TCPServer.cpp.obj	a549d0b840393036
+785	1144	7949357803580140	Practical_3/TCPServer.exe	25170ed57b9abee8
+11	859	7949362962355447	Practical_3/CMakeFiles/echo_server.dir/echo_server.cpp.obj	f79df80c930c26d6
+17	871	7949362962424778	Practical_3/CMakeFiles/echo_client.dir/echo_client.cpp.obj	ada51cd849be7d4b
+860	1210	7949362970852240	Practical_3/echo_server.exe	cb7c509dfa674669
+871	1210	7949362970955128	Practical_3/echo_client.exe	5f6b252b278e7c4a
+19	210	7949363264548570	Practical_3/echo_server.exe	cb7c509dfa674669
+27	215	7949363264624113	Practical_3/echo_client.exe	5f6b252b278e7c4a

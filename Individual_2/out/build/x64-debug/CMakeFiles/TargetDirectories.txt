@@ -1,0 +1,6 @@
+D:/Network/Individual_2/out/build/x64-debug/CMakeFiles/edit_cache.dir
+D:/Network/Individual_2/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+D:/Network/Individual_2/out/build/x64-debug/Individual_2/CMakeFiles/server.dir
+D:/Network/Individual_2/out/build/x64-debug/Individual_2/CMakeFiles/client.dir
+D:/Network/Individual_2/out/build/x64-debug/Individual_2/CMakeFiles/edit_cache.dir
+D:/Network/Individual_2/out/build/x64-debug/Individual_2/CMakeFiles/rebuild_cache.dir
