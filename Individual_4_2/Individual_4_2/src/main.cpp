@@ -13,10 +13,9 @@ int main() {
         std::cout << "Ping failed.\n";
     }
 
-    // Ждемо, щоб консоль не закривалась
     std::cout << "Press Enter to exit...";
-    std::cin.ignore(); // пропускаємо залишок буфера після std::cin >> ip
-    std::cin.get();    // чекаємо Enter
+    std::cin.ignore();
+    std::cin.get();
 
     return 0;
 }
