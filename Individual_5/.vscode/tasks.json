@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "run-url-parser",
+			"type": "shell",
+			"command": "mvn",
+			"args": [
+				"exec:java",
+				"-Dexec.mainClass=com.example.UrlParser"
+			],
+			"group": "build"
+		}
+	]
+}
