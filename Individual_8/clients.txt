@@ -1,0 +1,4 @@
+# Формат: clientId,host,port
+client1,127.0.0.1,9101
+client2,127.0.0.1,9102
+client3,127.0.0.1,9103
