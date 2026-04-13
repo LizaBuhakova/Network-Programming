@@ -1,0 +1,16 @@
+# Mail server settings
+mail.protocol=imap
+mail.host=imap.gmail.com
+mail.port=993
+mail.username=your_email@gmail.com
+mail.password=your_app_password
+
+# Folder to read from
+mail.folder=INBOX
+
+# Connection options
+mail.ssl.enable=true
+mail.starttls.enable=false
+
+# Poll interval (seconds)
+mail.poll.interval.seconds=30
