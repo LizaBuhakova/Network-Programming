@@ -1,0 +1,5 @@
+ua\edu\lab\repository\CustomerRepository.class
+ua\edu\lab\model\Order.class
+ua\edu\lab\model\Customer.class
+ua\edu\lab\model\CustomersData.class
+ua\edu\lab\servlet\CustomerServlet.class

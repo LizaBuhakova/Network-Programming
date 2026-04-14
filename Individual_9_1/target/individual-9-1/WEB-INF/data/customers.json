@@ -1,0 +1,52 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "fullName": "Петренко Іван Іванович",
+      "phone": "+380501112233",
+      "address": "м. Київ, вул. Хрещатик, 10",
+      "photo": "petrenko.jpg",
+      "orders": [
+        {
+          "id": 1,
+          "date": "2026-03-11",
+          "amount": 1800.0,
+          "paymentMethod": "Картка"
+        },
+        {
+          "id": 2,
+          "date": "2026-03-18",
+          "amount": 3200.5,
+          "paymentMethod": "Готівка"
+        },
+        {
+          "id": 3,
+          "date": "2026-04-02",
+          "amount": 950.75,
+          "paymentMethod": "Онлайн"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "fullName": "Коваленко Марія Олександрівна",
+      "phone": "+380671234567",
+      "address": "м. Львів, просп. Свободи, 3",
+      "photo": "kovalenko.jpg",
+      "orders": [
+        {
+          "id": 1,
+          "date": "2026-02-22",
+          "amount": 740.0,
+          "paymentMethod": "Картка"
+        },
+        {
+          "id": 2,
+          "date": "2026-03-30",
+          "amount": 1440.0,
+          "paymentMethod": "Онлайн"
+        }
+      ]
+    }
+  ]
+}

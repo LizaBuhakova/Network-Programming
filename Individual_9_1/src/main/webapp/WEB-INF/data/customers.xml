@@ -1,0 +1,43 @@
+<customers>
+    <customer id="1">
+        <fullName>Петренко Іван Іванович</fullName>
+        <phone>+380501112233</phone>
+        <address>м. Київ, вул. Хрещатик, 10</address>
+        <photo>petrenko.jpg</photo>
+        <orders>
+            <order id="1">
+                <date>2026-03-11</date>
+                <amount>1800.0</amount>
+                <paymentMethod>Картка</paymentMethod>
+            </order>
+            <order id="2">
+                <date>2026-03-18</date>
+                <amount>3200.5</amount>
+                <paymentMethod>Готівка</paymentMethod>
+            </order>
+            <order id="3">
+                <date>2026-04-02</date>
+                <amount>950.75</amount>
+                <paymentMethod>Онлайн</paymentMethod>
+            </order>
+        </orders>
+    </customer>
+    <customer id="2">
+        <fullName>Коваленко Марія Олександрівна</fullName>
+        <phone>+380671234567</phone>
+        <address>м. Львів, просп. Свободи, 3</address>
+        <photo>kovalenko.jpg</photo>
+        <orders>
+            <order id="1">
+                <date>2026-02-22</date>
+                <amount>740.0</amount>
+                <paymentMethod>Картка</paymentMethod>
+            </order>
+            <order id="2">
+                <date>2026-03-30</date>
+                <amount>1440.0</amount>
+                <paymentMethod>Онлайн</paymentMethod>
+            </order>
+        </orders>
+    </customer>
+</customers>

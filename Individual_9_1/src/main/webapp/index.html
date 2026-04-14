@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Individual #9.1 Servlet App</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 32px; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; }
+        li { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+<h1>Servlet застосунок: Замовники та замовлення</h1>
+<p>Базовий контекст: <code>/individual-9-1/customer</code></p>
+
+<h3>Доступні endpoints</h3>
+<ul>
+    <li><code>GET /customer/all</code> — список усіх замовників (JSON)</li>
+    <li><code>GET /customer/{id}/order/all</code> — всі замовлення замовника (HTML або JSON через Accept: application/json)</li>
+    <li><code>GET /customer/{id}/order/{iid}</code> — одне замовлення (JSON)</li>
+    <li><code>POST /customer/{id}/order/new</code> — додати замовлення (JSON body)</li>
+    <li><code>PUT /customer/{id}/order/{iid}/edit</code> — редагувати замовлення (JSON body)</li>
+</ul>
+
+<p>Для HTML-представлення відкрийте: <code>/individual-9-1/customer/1/order/all</code></p>
+</body>
+</html>
