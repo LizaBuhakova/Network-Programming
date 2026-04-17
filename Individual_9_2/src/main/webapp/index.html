@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers and Orders</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #1a1a2e;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        
+        .customer-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .customer-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .customer-header {
+            background-color: #4361ee;
+            padding: 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .customer-photo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid white;
+            object-fit: cover;
+        }
+        
+        .customer-info {
+            flex: 1;
+        }
+        
+        .customer-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .customer-detail {
+            font-size: 0.9em;
+            margin: 3px 0;
+            opacity: 0.9;
+        }
+        
+        .customer-body {
+            padding: 15px;
+        }
+        
+        .orders-title {
+            color: #4361ee;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #4361ee;
+        }
+        
+        .orders-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .orders-table th,
+        .orders-table td {
+            padding: 10px 6px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .orders-table th {
+            background: #f8f9fa;
+            color: #666;
+            font-weight: 600;
+            font-size: 0.85em;
+        }
+        
+        .orders-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .order-row-bold {
+            font-weight: bold;
+            background: #fff3cd;
+        }
+        
+        .order-row-bold td {
+            color: #d63031;
+        }
+        
+        .amount {
+            color: #00b894;
+            font-weight: 600;
+        }
+        
+        .order-row-bold .amount {
+            color: #d63031;
+        }
+        
+        .payment-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+        
+        .payment-card {
+            background: #dfe6e9;
+            color: #2d3436;
+        }
+        
+        .payment-cash {
+            background: #ffeaa7;
+            color: #d63031;
+        }
+        
+        .loading {
+            text-align: center;
+            color: #666;
+            font-size: 1.5em;
+            padding: 50px;
+        }
+        
+        .error {
+            text-align: center;
+            color: #d63031;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Customers and Orders</h1>
+        
+        <div id="loading" class="loading">Loading...</div>
+        <div id="error" class="error" style="display: none;"></div>
+        <div id="customerList" class="customer-list"></div>
+    </div>
+
+    <script>
+        const API_BASE = '/customer-orders-app/api/customers';
+        
+        async function loadCustomers() {
+            const loading = document.getElementById('loading');
+            const error = document.getElementById('error');
+            const customerList = document.getElementById('customerList');
+            
+            try {
+                const response = await fetch(API_BASE);
+                
+                if (!response.ok) {
+                    throw new Error('Failed to load data');
+                }
+                
+                const customers = await response.json();
+                
+                loading.style.display = 'none';
+                
+                if (customers.length === 0) {
+                    customerList.innerHTML = '<p style="color: #666; text-align: center;">No customers found</p>';
+                    return;
+                }
+                
+                customerList.innerHTML = customers.map(customer => {
+                    const maxAmount = Math.max(...customer.orders.map(o => o.amount));
+                    
+                    return `
+                        <div class="customer-card">
+                            <div class="customer-header">
+                                <img src="${customer.photo}" alt="Photo" class="customer-photo" 
+                                     onerror="this.src='https://via.placeholder.com/60'">
+                                <div class="customer-info">
+                                    <div class="customer-name">${customer.fullName}</div>
+                                    <div class="customer-detail">${customer.phone}</div>
+                                    <div class="customer-detail">${customer.address}</div>
+                                </div>
+                            </div>
+                            <div class="customer-body">
+                                <h3 class="orders-title">Orders</h3>
+                                <table class="orders-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Amount</th>
+                                            <th>Payment</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        ${customer.orders.map(order => {
+                                            const isMax = order.amount === maxAmount;
+                                            const rowClass = isMax ? 'order-row-bold' : '';
+                                            const paymentClass = order.paymentMethod === 'Card' ? 'payment-card' : 'payment-cash';
+                                            
+                                            return `
+                                                <tr class="${rowClass}">
+                                                    <td>${formatDate(order.date)}</td>
+                                                    <td class="amount">${formatAmount(order.amount)} UAH</td>
+                                                    <td><span class="payment-badge ${paymentClass}">${order.paymentMethod}</span></td>
+                                                </tr>
+                                            `;
+                                        }).join('')}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+                
+            } catch (err) {
+                loading.style.display = 'none';
+                error.style.display = 'block';
+                error.textContent = err.message;
+                console.error('Error:', err);
+            }
+        }
+        
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('en-US', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric'
+            });
+        }
+        
+        function formatAmount(amount) {
+            return amount.toLocaleString('en-US', {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            });
+        }
+        
+        document.addEventListener('DOMContentLoaded', loadCustomers);
+    </script>
+</body>
+</html>

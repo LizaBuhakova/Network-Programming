@@ -1,0 +1,85 @@
+[
+  {
+    "id": 1,
+    "fullName": "Alexander Petrovich Kovalenko",
+    "phone": "+380671234567",
+    "address": "Kyiv, Khreshchatyk St. 10",
+    "photo": "https://loremflickr.com/150/150/dog",
+    "orders": [
+      {
+        "id": 1,
+        "customerId": 1,
+        "date": "2025-01-15",
+        "amount": 2500.00,
+        "paymentMethod": "Card"
+      },
+      {
+        "id": 2,
+        "customerId": 1,
+        "date": "2025-02-20",
+        "amount": 1500.00,
+        "paymentMethod": "Cash"
+      },
+      {
+        "id": 3,
+        "customerId": 1,
+        "date": "2025-03-10",
+        "amount": 3200.00,
+        "paymentMethod": "Card"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "fullName": "Maria Ivanivna Shevchenko",
+    "phone": "+380503456789",
+    "address": "Lviv, Svobody Ave. 25",
+    "photo": "https://loremflickr.com/150/150/cat",
+    "orders": [
+      {
+        "id": 4,
+        "customerId": 2,
+        "date": "2025-01-08",
+        "amount": 800.00,
+        "paymentMethod": "Cash"
+      },
+      {
+        "id": 5,
+        "customerId": 2,
+        "date": "2025-02-14",
+        "amount": 4500.00,
+        "paymentMethod": "Card"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "fullName": "Igor Vladimirovich Bondarenko",
+    "phone": "+380931112233",
+    "address": "Odesa, Deribasivska St. 3",
+    "photo": "https://loremflickr.com/150/150/rabbit",
+    "orders": [
+      {
+        "id": 6,
+        "customerId": 3,
+        "date": "2025-01-22",
+        "amount": 1200.00,
+        "paymentMethod": "Card"
+      },
+      {
+        "id": 7,
+        "customerId": 3,
+        "date": "2025-02-28",
+        "amount": 950.00,
+        "paymentMethod": "Cash"
+      },
+      {
+        "id": 8,
+        "customerId": 3,
+        "date": "2025-03-05",
+        "amount": 2100.00,
+        "paymentMethod": "Card"
+      }
+    ]
+  }
+]
